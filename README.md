@@ -12,7 +12,7 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 
 
 ## Soft Skills
-| Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgáncia |
+| Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Análisis de datos |
 
 
 ## Contáctame
