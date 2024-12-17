@@ -5,17 +5,14 @@ Químico Farmacéutico Biólogo, con maestría en Síntesis Total certificado en
 Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la automatización usando modelos de aprendizaje automático y pruebas de hipótesis que realizan predicciones confiables.
 
 ## Hard Skills
-
-
 - Generación de modelos predictivos usando __Scikit-learn, PyTorch, TensorFlow__
 - Optimización de modelos de __Machine Learning__ con __CatBoost, Optuna, LigthGBM__ y __GridSearchCV__
 - Visualización de datos con herramientas como __Seaborn, Matplotlib, PowerBI, Chemdraw__ y __MestreNova__
 
 ## Soft Skills
+| Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgáncia |
 
-
-| Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgánica | 
-
+## Contáctame
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style-for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:juanluisalva60@gmail.com)
 
