@@ -122,6 +122,7 @@ El modelo final permitió realizar predicciones correctas el 72% de las ocasione
 
 Explora a detalle en el repositorio: 
 
+
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/Telecom-Report)
 
 
@@ -213,6 +214,7 @@ Se transformó la serie temporal en una serie estacionaria apta para el entrenam
 
 
 Explora a detalle en el repositorio:
+
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
 
