@@ -21,7 +21,7 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 
 # Proyectos relevantes
 
-## 1. Análisis de la retención de clientes en la industria de telecomunicaciones
+## 1. Retención de clientes en la industria de telecomunicaciones
 
 
 Según un estudio de Harvard Business School, el coste de adquisición de un nuevo cliente es de 5 a 7 veces mayor que el coste de retener un cliente existente. Con la finalidad de __reducir costos__ desarrollé un modelo predictivo que permitió identificar a los clientes que cancelarian su servicio con Telecom, permitiendo desarrollar __estrategias promocionales focalizadas__ aumentando la __fidelización efectiva__.
@@ -101,8 +101,7 @@ El modelo final permitió realizar predicciones correctas el 72% de las ocasione
 ![curva_auc_roc](assets/img/modelo_final_auc_roc.png)
 
 
-Explora a detalle en el repositorio: [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
-
+Explora a detalle en el repositorio: [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)]([https://github.com/ja19191990/series_temporales_y_machine_learning](https://github.com/ja19191990/Telecom-Report)
 
 ## 2. Predicción de la demanda de servicio de Taxis
 
@@ -179,6 +178,6 @@ Se transformó la serie temporal en una serie estacionaria apta para el entrenam
 ![tendencia_estacionalidad_postratamiento](assets/img/tendencia_estacionalidad_postratamiento.png)
 
 
-Explora a detalle en el repositorio [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
+Explora a detalle en el repositorio [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
 
 
