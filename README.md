@@ -4,17 +4,22 @@ Químico Farmacéutico Biólogo, con maestría en Síntesis Total certificado en
 
 Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la automatización usando modelos de aprendizaje automático y pruebas de hipótesis que realizan predicciones confiables.
 
+
 ## Hard Skills
 - Generación de modelos predictivos usando __Scikit-learn, PyTorch, TensorFlow__
 - Optimización de modelos de __Machine Learning__ con __CatBoost, Optuna, LigthGBM__ y __GridSearchCV__
 - Visualización de datos con herramientas como __Seaborn, Matplotlib, PowerBI, Chemdraw__ y __MestreNova__
 
+
 ## Soft Skills
 | Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgáncia |
+
 
 ## Contáctame
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style-for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:juanluisalva60@gmail.com)
+
+
 
 # Proyectos relevantes
 
@@ -23,7 +28,7 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 
 Según un estudio de Harvard Business School, el coste de adquisición de un nuevo cliente es de 5 a 7 veces mayor que el coste de retener un cliente existente. Con la finalidad de __reducir costos__ desarrollé un modelo predictivo que permitió identificar a los clientes que cancelarian su servicio con Telecom, permitiendo desarrollar __estrategias promocionales focalizadas__ aumentando la __fidelización efectiva__.
 
-### Herramientas utilizadas
+### Herramientas y habilidades utilizadas
 
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style-for-the-badge&logo=python&logoColor=white&labelColor=101010)]()
@@ -47,20 +52,34 @@ El modelo debe de ser capaz de predecir con un AUC-ROC superior a 0.65.
 2. ¿Qué ventana de temporal debería de utilizarse para realizar la predicción?
 3. ¿Cómo se pueden segmentar los clientes para entrenar efectivamente un modelo de aprendizaje automático?
 
+
 ### Metodología
 
 
 __Importación de datos__: Se importaron los datos a partir de varios archivos .csv de Telecom con diferentes datos a analizar.
-__Exploratory Data Analysis (EDA)__: Se identificó la variable objetivo y las características de cara a un problema de clasificación desbalanceada en una población con tres tipos de duración de contrato que pueden abarcar los servicios de telefonia y/o internet y se definé un horizonte de predicción de 6 años con base en los datos presentados por el cliente. Se consolida la información necesaria en un solo dataset, y se homogenizaron formatos, gestionando valores ausentes y corroborando la duplicación de valores explícitos.
-__Preprocesamiento__: Se realizó feature engineering al crear y eliminar columnas, codificación de columnas categóricas utilizando One-Hot Encoding y Codificación de etiquetas, escalamiento, segmentación de datos y el usó de upsampling.
-__Modelos__: Se entrenaron modelos de regresión logística y tipo bosque aleatorio de clasificación, probando métodologías con y sin validación cruzada, con y sin optimización bayesiana de hiperparámetros, y con y sin boosting.
+
+__Exploratory Data Analysis (EDA)__: Se identificó la variable objetivo y las características de cara a un problema de clasificación desbalanceada en una población con tres tipos de duración de contrato que pueden
+abarcar los servicios de telefonia y/o internet y se definé un horizonte de predicción de 6 años con base en los datos presentados por el cliente. Se consolida la información necesaria en un solo dataset, y se 
+homogenizaron formatos, gestionando valores ausentes y corroborando la duplicación de valores explícitos.
+
+__Preprocesamiento__: Se realizó feature engineering al crear y eliminar columnas, codificación de columnas categóricas utilizando One-Hot Encoding y Codificación de etiquetas, escalamiento, segmentación de datos
+y el usó de upsampling.
+
+__Modelos__: Se entrenaron modelos de regresión logística y tipo bosque aleatorio de clasificación, probando métodologías con y sin validación cruzada, con y sin optimización bayesiana de hiperparámetros, y con y 
+sin boosting.
+
 __Modelo Final__: El modelo final predijo correctamente el 72% de los casos de prueba superando el requerimiento de cliente.
+
+
 
 ### Recomendaciones
 
+__Focalizar esfuerzos__: Exiten dos tipos de clientes, sin embargo aquellos clientes que contratan servicios de telefonia e internet aportan la mayor parte del ingreso independientemente del tipo de contrato 
+contratado.
 
-__Focalizar esfuerzos__: Exiten dos tipos de clientes, sin embargo aquellos clientes que contratan servicios de telefonia e internet aportan la mayor parte del ingreso independientemente del tipo de contrato contratado.
-__Facilitar la transición de contratos__: Los clientes más fieles en su mayoría comienzan con un contrato mensual, que eventualmente cambian a uno anual y finalmente a una bianual. Facilitar la transición entre un tipo de contrato y otro podría aumentar la fidelización.
+__Facilitar la transición de contratos__: Los clientes más fieles en su mayoría comienzan con un contrato mensual, que eventualmente cambian a uno anual y finalmente a una bianual. Facilitar la transición entre  
+un tipo de contrato y otro podría aumentar la fidelización.
+
 
 ### Visualizaciones interesantes
 
@@ -72,12 +91,14 @@ Los clientes constan de dos poblaciones que se separa en un valor de gasto cerca
 
 ![agrupacion_por_target](/assets/img/agrupacion_por_target.png)
 
+
 2. ¿Cómo influye la ventana contractual en los clientes?
 
 
 Observamos que la mayoría de los clientes actualmente tiene contratos mensuales, sin embargo existe una migración a contratos de mayor duración en los clientes leales. Por otra parte, la mayor parte de los cargos totales se deben a contratos bianuales.
 
 ![agrupación_por_tipo_de_contrato](/assets/img/agrupacion_por_tipo_de_contrato.png)
+
 
 3. Desbalanceo de clases
 
@@ -90,6 +111,7 @@ Dicho desbalanceo se trató con upsampling logrando balancear las clases. Aconti
 
 ![train_balanceado](assets/img/conjunto_de_entrenamiento_balanceado.png)
 
+
 4. Curva AUC-ROC
 
 
@@ -101,8 +123,8 @@ El modelo final permitió realizar predicciones correctas el 72% de las ocasione
 Explora a detalle en el repositorio: [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/Telecom-Report)
 
 
-## 2. Predicción de la demanda de una app de transporte 
 
+## 2. Predicción de la demanda de una app de transporte 
 
 
 Previniendo fluctuaciones en la demanda de transporte en áreas adyacentes a aeropuertos, se logró asignar recursos operativos y captar suficientes conductores para cubrir eficientemente el volumen de solicitudes durante los períodos de mayor actividad.
@@ -135,17 +157,25 @@ La métrica RECM en el conjunto de prueba no debía superar a 48 en un horizonte
 ### Metodología
 
 
-__Importación de datos__: Se importaron los datos a partir de un archivos .csv de Sweer Lift Taxi con 26496 filas y variables tipo _object_ e _intiger_ en los datos y con una asignación de tipo de variable incorrecta en la columna _datetime_.
+__Importación de datos__: Se importaron los datos a partir de un archivos .csv de Sweer Lift Taxi con 26496 filas y variables tipo _object_ e _intiger_ en los datos y con una asignación de tipo de variable
+incorrecta en la columna _datetime_.
+
 __Exploratory Data Analysis (EDA)__: Se modificó el tipo de variable contenida en la columna datetime de acuerdo a la documentación para abordar la construcción de un modelo predictivo para serie temporales. 
-__Preprocesamiento__: Se gestionaron outliners mediante una función propia para identificar a los datos que seguian un patrón general y cuales no. Se utilizó el remuestreo redifiniendo la ventana temporal a analizar. Usando una media móvil se transformó la serie temporal a una estacionaria apta para entrenar el modelo.
+
+__Preprocesamiento__: Se gestionaron outliners mediante una función propia para identificar a los datos que seguian un patrón general y cuales no. Se utilizó el remuestreo redifiniendo la ventana temporal a 
+analizar. Usando una media móvil se transformó la serie temporal a una estacionaria apta para entrenar el modelo.
+
 __Modelos__: Se entrenaron modelos de regresión lineal y Bosque aleatorio de regresión utilizando GridSearchCV y Optuna para el _tunning_ de hiperparámetros y CatBoost como herramienta de boosting.
-__Modelo Final__: El RMSE del modelo de bosque aleatorio con el conjunto de datos de prueba fue de 35.65 al predecir el número de ordenes de servicio de taxi  en un escenario con horizonte de una hora siendo menor al umbral solicitado de 48.
+
+__Modelo Final__: El RMSE del modelo de bosque aleatorio con el conjunto de datos de prueba fue de 35.65 al predecir el número de ordenes de servicio de taxi  en un escenario con horizonte de una hora siendo 
+menor al umbral solicitado de 48.
 
 
 ### Recomendaciones
 
 
 __Gestión eficiente de la demanda__: Los datos mostraron que la demanda habital de ordenes de servicio oscila entre más menos 20 ordenes, de una hora a otra permitiendo reservar el número de conductores necesarios para cubrir las horas pico de servicio. 
+
 __Gestión eficiente de los recursos__: Las predicciones de la demanda permiten ajustar las tarifas de forma dinámica hora a hora para regular la disponibilidad de conductores de taxi maximizando la rentabilidad.
 
 
@@ -169,7 +199,7 @@ Se observo una tendencia principalmente ascendente en el número de ordenes de t
 ![tendencia_estacionalidad_inicial](assets/img/tendencia_estacionalidad_inicial.png)
 
  
-4. Tranformación a serie temporal estacionaria
+3. Tranformación a serie temporal estacionaria
 
 Se transformó la serie temporal en una serie estacionaria apta para el entrenamiento de un modelo predictivo.
 
