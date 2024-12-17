@@ -120,7 +120,9 @@ El modelo final permitió realizar predicciones correctas el 72% de las ocasione
 ![curva_auc_roc](assets/img/modelo_final_auc_roc.png)
 
 
-Explora a detalle en el repositorio: [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/Telecom-Report)
+Explora a detalle en el repositorio: 
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/Telecom-Report)
 
 
 
@@ -174,7 +176,8 @@ menor al umbral solicitado de 48.
 ### Recomendaciones
 
 
-__Gestión eficiente de la demanda__: Los datos mostraron que la demanda habital de ordenes de servicio oscila entre más menos 20 ordenes, de una hora a otra permitiendo reservar el número de conductores necesarios para cubrir las horas pico de servicio. 
+__Gestión eficiente de la demanda__: Los datos mostraron que la demanda habital de ordenes de servicio oscila entre más menos 20 ordenes, de una hora a otra permitiendo reservar el número de conductores necesarios
+para cubrir las horas pico de servicio. 
 
 __Gestión eficiente de los recursos__: Las predicciones de la demanda permiten ajustar las tarifas de forma dinámica hora a hora para regular la disponibilidad de conductores de taxi maximizando la rentabilidad.
 
@@ -183,7 +186,8 @@ __Gestión eficiente de los recursos__: Las predicciones de la demanda permiten 
 
 1. ¿Cuántos datos siguen un patrón general?
 
-Se creó una función que identificó y eliminó los outliners númericos que exceden el intervalo que va desde Q1-(IQR*1.5) a Q3 +(IQR*1.5).Siendo IQR el espacio intercuartílico, Q1 el percentil 25% y Q3 el percentil 75%. Después de aplicar la función detect_outliner se observó:
+Se creó una función que identificó y eliminó los outliners númericos que exceden el intervalo que va desde Q1-(IQR*1.5) a Q3 +(IQR*1.5).Siendo IQR el espacio intercuartílico, Q1 el percentil 25% y Q3 el percentil
+75%. Después de aplicar la función detect_outliner se observó:
 
 * La media cambió de 14.070 a 13.279.
 * La desviación estándar cambió de 9.211 a 7.763.
@@ -194,7 +198,9 @@ Se creó una función que identificó y eliminó los outliners númericos que ex
 
 2. ¿Qué tendencia y estacionalidad tienen los datos originales?
 
-Se observo una tendencia principalmente ascendente en el número de ordenes de taxis conforme transcurren los meses del año oscilando aproximadamente entre 35 y 118 ordenes. La temporalidad mostró una oscilación entre -50 y 40 ordenes aproximadamente que se refieren a las ordenes que son solicitadas de forma repetida cada hora. Finalmente, el último gráfico hace referencia a los residuos que son artefactos computancionales que no requirieron mayor análisis. Esta serie temporal no es estacionaria por lo que no es apta para el entrenamiento de un modelo predictivo.
+Se observo una tendencia principalmente ascendente en el número de ordenes de taxis conforme transcurren los meses del año oscilando aproximadamente entre 35 y 118 ordenes. La temporalidad mostró una oscilación 
+entre -50 y 40 ordenes aproximadamente que se refieren a las ordenes que son solicitadas de forma repetida cada hora. Finalmente, el último gráfico hace referencia a los residuos que son artefactos 
+computancionales que no requirieron mayor análisis. Esta serie temporal no es estacionaria por lo que no es apta para el entrenamiento de un modelo predictivo.
 
 ![tendencia_estacionalidad_inicial](assets/img/tendencia_estacionalidad_inicial.png)
 
@@ -206,6 +212,8 @@ Se transformó la serie temporal en una serie estacionaria apta para el entrenam
 ![tendencia_estacionalidad_postratamiento](assets/img/tendencia_estacionalidad_postratamiento.png)
 
 
-Explora a detalle en el repositorio [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
+Explora a detalle en el repositorio:
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
 
 
