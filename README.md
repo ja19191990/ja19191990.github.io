@@ -33,10 +33,10 @@ Según un estudio de Harvard Business School, el coste de adquisición de un nue
 [![Numpy](https://img.shields.io/badge/Numpy-013243?style-for-the-badge&logo=numpy&logoColor=white&labelColor=101010)]()
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style-for-the-badge&logo=numpy&logoColor=white&labelColor=101010)]()
 [![Scikit-learn](https://img.shields.io/badge/Scikit-learn-F7931E?style-for-the-badge&logo=scikitlearn&logoColor=white&labelColor=101010)]()
-[![Seaborn]]
-[![Clasificación]]()
-[![Modelo Predictivo]]()
-[![Aprendizaje Supervisado]]()
+![Seaborn](https://img.shields.io/badge/Seaborn-blue)
+![Clasificación](https://img.shields.io/badge/Clasificación-blue)
+![Modelo Predictivo](https://img.shields.io/badge/Modelo%20Predictivo-blue)
+![Aprendizaje Supervisado](https://img.shields.io/badge/Aprendizaje%20Supervisado-blue)
 
 ### Requerimiento para el éxito:
 
@@ -101,9 +101,10 @@ El modelo final permitió realizar predicciones correctas el 72% de las ocasione
 ![curva_auc_roc](assets/img/modelo_final_auc_roc.png)
 
 
-Explora a detalle en el repositorio: [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)]([https://github.com/ja19191990/series_temporales_y_machine_learning](https://github.com/ja19191990/Telecom-Report)
+Explora a detalle en el repositorio: [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/Telecom-Report)
 
-## 2. Predicción de la demanda de servicio de Taxis
+
+## 2. Predicción de la demanda de una app de transporte 
 
 
 
@@ -117,10 +118,10 @@ Previniendo fluctuaciones en la demanda de transporte en áreas adyacentes a aer
 [![Numpy](https://img.shields.io/badge/Numpy-013243?style-for-the-badge&logo=numpy&logoColor=white&labelColor=101010)]()
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style-for-the-badge&logo=numpy&logoColor=white&labelColor=101010)]()
 [![Scikit-learn](https://img.shields.io/badge/Scikit-learn-F7931E?style-for-the-badge&logo=scikitlearn&logoColor=white&labelColor=101010)]()
-[![Seaborn]]
-[![Statmodels]]
-[![Series temporales]]
-
+![Seaborn](https://img.shields.io/badge/Seaborn-blue)
+![Statmodels](https://img.shields.io/badge/Statmodels-blue)
+![Series temporales](https://img.shields.io/badge/Series%20Temporales-blue)
+![Aprendizaje Supervisado](https://img.shields.io/badge/Aprendizaje%20Supervisado-blue)
 
 ### Requerimientos para el éxito:
 
@@ -178,6 +179,6 @@ Se transformó la serie temporal en una serie estacionaria apta para el entrenam
 ![tendencia_estacionalidad_postratamiento](assets/img/tendencia_estacionalidad_postratamiento.png)
 
 
-Explora a detalle en el repositorio [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
+Explora a detalle en el repositorio [![GitHub](https://img.shields.io/badge/GitHub-181717?style-for-the-badge&logo=github&logoColor=white&labelColor=101010)](https://github.com/ja19191990/series_temporales_y_machine_learning)
 
 
