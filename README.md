@@ -14,7 +14,7 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 ## Soft Skills
 
 
-| Pensamiento crítico | Alta capacidad de análisis | Gestión de proyectos | Coordinación de equipos multidicplinarios | Gestión del tiempo | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgánica | 
+| Pensamiento crítico | Gestión de proyectos | Optimización de procesos | Investigación aplicada | Comunicación efectiva | Adaptabilidad | Química Orgánica | 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style-for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:juanluisalva60@gmail.com)
