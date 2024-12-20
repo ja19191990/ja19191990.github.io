@@ -83,7 +83,7 @@ un tipo de contrato y otro podría aumentar la fidelización.
 ### Visualizaciones interesantes
 
 
-1. ¿Cómo son los clientes?
+#### 1. ¿Cómo son los clientes?
 
 
 Los clientes constan de dos poblaciones que se separa en un valor de gasto cercano a 40, siendo menor a dicho valor si sólo se contrata uno de los dos servicios disponibles comportamiento apreciado al analizar los cargos totales contra la fecha de incio del contrato. Por otra parte, la distribución de los valores de End_Date, 0 y 1, se observa en ambas poblaciones y en cada relación de variables representada por lo que es poco probable que estos factores mantengan una relación determinante por si mismos para predecir la cancelació o no del servicio.
@@ -91,7 +91,7 @@ Los clientes constan de dos poblaciones que se separa en un valor de gasto cerca
 ![agrupacion_por_target](/assets/img/agrupacion_por_target.png)
 
 
-2. ¿Cómo influye la ventana contractual en los clientes?
+#### 2. ¿Cómo influye la ventana contractual en los clientes?
 
 
 Observamos que la mayoría de los clientes actualmente tiene contratos mensuales, sin embargo existe una migración a contratos de mayor duración en los clientes leales. Por otra parte, la mayor parte de los cargos totales se deben a contratos bianuales.
@@ -99,7 +99,7 @@ Observamos que la mayoría de los clientes actualmente tiene contratos mensuales
 ![agrupación_por_tipo_de_contrato](/assets/img/agrupacion_por_tipo_de_contrato.png)
 
 
-3. Desbalanceo de clases
+#### 3. Desbalanceo de clases
 
 
 Los datos iniciales tenían un marcado desbalanceo con una aproximación 10:1.
@@ -111,7 +111,7 @@ Dicho desbalanceo se trató con upsampling logrando balancear las clases. Aconti
 ![train_balanceado](assets/img/conjunto_de_entrenamiento_balanceado.png)
 
 
-4. Curva AUC-ROC
+#### 4. Curva AUC-ROC
 
 
 El modelo final permitió realizar predicciones correctas el 72% de las ocasiones superando el requerimiento del cliente.
@@ -184,7 +184,7 @@ __Gestión eficiente de los recursos__: Las predicciones de la demanda permiten 
 
 ### Visualizaciones interesantes
 
-1. ¿Cuántos datos siguen un patrón general?
+#### 1. ¿Cuántos datos siguen un patrón general?
 
 Se creó una función que identificó y eliminó los outliners númericos que exceden el intervalo que va desde Q1-(IQR*1.5) a Q3 +(IQR*1.5).Siendo IQR el espacio intercuartílico, Q1 el percentil 25% y Q3 el percentil
 75%. Después de aplicar la función detect_outliner se observó:
@@ -196,7 +196,7 @@ Se creó una función que identificó y eliminó los outliners númericos que ex
 
 ![gestion_outliners](/assets/img/gestion_outliners.png)
 
-2. ¿Qué tendencia y estacionalidad tienen los datos originales?
+#### 2. ¿Qué tendencia y estacionalidad tienen los datos originales?
 
 Se observo una tendencia principalmente ascendente en el número de ordenes de taxis conforme transcurren los meses del año oscilando aproximadamente entre 35 y 118 ordenes. La temporalidad mostró una oscilación 
 entre -50 y 40 ordenes aproximadamente que se refieren a las ordenes que son solicitadas de forma repetida cada hora. Finalmente, el último gráfico hace referencia a los residuos que son artefactos 
@@ -205,7 +205,7 @@ computancionales que no requirieron mayor análisis. Esta serie temporal no es e
 ![tendencia_estacionalidad_inicial](assets/img/tendencia_estacionalidad_inicial.png)
 
  
-3. Tranformación a serie temporal estacionaria
+#### 3. Tranformación a serie temporal estacionaria
 
 Se transformó la serie temporal en una serie estacionaria apta para el entrenamiento de un modelo predictivo.
 
