@@ -60,7 +60,7 @@ __Importación de datos__: Se importaron los datos a partir de varios archivos .
 
 __Exploratory Data Analysis (EDA)__: Se identificó la variable objetivo y las características de cara a un problema de clasificación desbalanceada en una población con tres tipos de duración de contrato que pueden
 abarcar los servicios de telefonia y/o internet y se definé un horizonte de predicción de 6 años con base en los datos presentados por el cliente. Se consolida la información necesaria en un solo dataset, y se 
-homogenizaron formatos, gestionando valores ausentes y corroborando la duplicación de valores explícitos.
+homogenizaron formatos, gestionando valores ausentes y corroborando la no duplicación de valores explícitos.
 
 __Preprocesamiento__: Se realizó feature engineering al crear y eliminar columnas, codificación de columnas categóricas utilizando One-Hot Encoding y Codificación de etiquetas, escalamiento, segmentación de datos
 y el usó de upsampling.
@@ -74,10 +74,9 @@ __Modelo Final__: El modelo final predijo correctamente el 72% de los casos de p
 
 ### Recomendaciones
 
-__Focalizar esfuerzos__: Exiten dos tipos de clientes, sin embargo aquellos clientes que contratan servicios de telefonia e internet aportan la mayor parte del ingreso independientemente del tipo de contrato 
-contratado.
+__Focalizar esfuerzos__: Exiten dos tipos de clientes, sin embargo aquellos que contratan servicios de telefonia e internet aportan la mayor parte del ingreso independientemente del tipo de contrato.
 
-__Facilitar la transición de contratos__: Los clientes más fieles en su mayoría comienzan con un contrato mensual, que eventualmente cambian a uno anual y finalmente a una bianual. Facilitar la transición entre  
+__Facilitar la transición de contratos__: Los clientes fieles en su mayoría comienzan con un contrato mensual, que eventualmente cambian a uno anual y finalmente a una bianual. Facilitar la transición entre  
 un tipo de contrato y otro podría aumentar la fidelización.
 
 
