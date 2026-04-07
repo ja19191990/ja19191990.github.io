@@ -19,12 +19,152 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style-for-the-badge&logo=linkedin&logoColor=white&labelColor=101010)](https://www.linkedin.com/in/juanluisalvaretana/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style-for-the-badge&logo=gmail&logoColor=white&labelColor=101010)](mailto:juanluisalva60@gmail.com)
 
+# Índice
+- [Proyectos de análisis de datos](#Proyectos-de-analisis-de-datos)
+    - [Análisis de la calidad del servicio médico](#Analisis-de-la-calidad-del-servicio-medico)
+    - [Comparación de metodologías diagnósticas para la enfermedad de hidrops](#Comparacion-de-metodologias-diagnosticas-para-la-enfermedad-de-hidrops) 
+- [Proyectos de ciencia de datos](#Proyectos-de-ciencia-de-datos)
+    - [Retención de clientes](#Retencion-de-clientes)
+    - [Predicción de la demanda de una app de transporte](#Prediccion-de-la-demanda-de-una-app-de-transporte)
+
+# Proyectos de análisis de datos
+
+## Análisis de la calidad del servicio médico
+El servicio de medicina del trabajo del Hospital General de Zona de Medicina Familiar 21 del Instituto Mexicano del Seguro Social (IMSS), buscó evaluar la calidad del servicio que sus pacientes recibían al aplicarles alguno de los siguientes procedimientos:
+
+- Calificación accidente de trabajo  
+- Dictamen Incapacidad Permanente Parcial
+- Dictamen de Invalidez
+- Calificación enfermedad de trabajo
+- Dictamen beneficiario incapacitado
+- Dictamen de invalidez
+- Dictamen incapacidad Permanente Total
+
+Se tuvo interes en comparar las expectativas y percepciones de la atención médica.
+
+### Herramientas y habilidades utilizadas
+
+### Requerimientos para el éxito
+1. Diseñar y crear un dashboard interactivo que muestre:
 
 
-# Proyectos relevantes
+    - Información general de los pacientes del servicio de medicina del trabajo utilizando slicers para visualizar las difrencias en la atención por procedimiento. 
+    - Comparación entre las expectativas y percepciones del servicio médico recibido.
 
-## 1. Retención de clientes en la industria de telecomunicaciones
+2. Crear una base de datos relacional que alimente al dashboard en el futuro.
 
+### Preguntas clave
+* Análisis demográfico:<br>
+    ¿Qué escolaridad tienen los pacientes que reciben a cada procedimiento?<br>
+	   ¿Qué edad tienen los pacientes reciben cada procedimiento?<br>
+	   ¿Cual es el procedimiento más solicitado?<br>
+    ¿Cual es el procedimiento menos solicitado?<br>
+	   ¿Cuantos pacientes se presentaron por procedimiento?<br>
+
+* Calidad del servicio:<br>
+
+	¿Es mayor la expectativa o la percepción de satisfacción del servicio recibido?<br>
+	¿Qué preguntas mostraron la mayor diferencia negativa entre percpeción y expectativa?<br>
+	¿Qué preguntas mostraron la mayor diferencia positiva entre percepción y expectativa?<br>
+ ¿Cómo cambia la expectativa y percepción de cada procedimiento recibido según el sexo del paciente?
+
+* Paciente regular:<br>
+
+	¿Cómo es el paciente típico de cada procedimiento?<br>
+
+### Metodología
+El personal médico aplicó encuestas a 383 pacientes que constaron de 22 preguntas. Cada paciente respondió dos encuestas una previa a la atención médica y la segunda después de haber recibido la atención médica. Todas las encuestas fueron llenadas en el lugar físico después de obtener el consentimiento informado de los pacientes participantes, a los cuales se les explico el alcance del estudio. Una vez recolectados los datos el área médica cargo dichos datos en un archivo tipo .csv.
+
+* Estructura de las encuestas
+
+Cada encuesta constaba de:
+
+- Encabezado: Segmento dedicado a recabar información general del paciente tal como edad, nombre, sexo, escolaridad y procedimiento solicitado.
+
+- Cuerpo: Segmento que contaba con 22 preguntas dedicadas a evaluar la satisfacción, tiempo dedicado y expectativas de los pacientes.
+
+* Confidencialidad
+
+Por razones de confidencialidad de los pacientes las preguntas no se muestran y los datos originales fueron modificados para no incluir información personal sensible que pueda ser ligado a los paciente en particular con fines de proteger sus datos personales.
+
+* Etapas
+
+- Diseño
+- Desarrollo
+- Prueba
+- Análisis
+
+* Flujo de trabajo
+
+1. A partir de un archivo .csv de Excel ubicado en data/raw se realizó la exploración inicial de los datos.
+2. Se alimentó el notebook _EDA_ en el cual se realizó:
+    - Limpieza de datos.
+    - Estandarización de encabezados.
+    - Corrección de errores de importación.
+    - Visualización incial da los datos.
+  
+
+El output fue _preprocessing.csv_.
+
+
+3. El archivo _preprocessing.csv_ fue el input para el notebook _Preprocessing.ipynb_ enfocado en:
+    - Enriquecimiento y transformación de características.
+    - Cambio en tipo de variables recien añadidas.
+    - Visualización a detalle con datos transformados.
+
+    
+El output fue el dataset _df_sql.csv_.
+
+
+4. Al archivo anterior fue cargado en PostgreSQL iniciando el *pipeline* automatizado que creó tablas, validó calidad de datos y generó vistas analíticas mediante scripts ejecutados secuencialmente desde Python, garantizando reproducibilidad del modelo de datos. La secuencia del pipeline fue la siguiente:
+    - load_to_postgres.py
+
+   
+      Carga el dataset procesado (df_sql.csv) desde data/processed/ hacia PostgreSQL, creando o reemplazando la tabla base df_sql. El modelado de bases de datos         incluyo la creación de las tablas _generales_ y _satisfaccion_, la creación de claves primarias, creación de vistas finales y normalización de tablas.
+    - run_sql_pipeline.py
+  
+      
+      Se realizaron valiaciones de calidad de datos de las tablas de salida del pipeline de SQL que alimentaron a Power BI, comprobando la centa de filas,               columnas, el tipo de dato por columna y la existencia de filas duplicadas.
+      Se crearon scripts de SQL analíticos para la consulta KPIs como: ¿Cúal fue la pregunta con la mayor diferencia negativa? ¿Cúal fue la pregunta con la mayor        diferencia positiva? ¿Cuantos pacientes se tienen por procedimiento?
+   - export_to_csv.py
+  
+     
+     Extrae tablas y vistas finales desde PostgreSQL y las exporta a .csv para su consumo en Power BI y visualización reproducible.
+
+
+5. Se almacena el ouput del pipeline en la ubicación sql/:
+
+    - ddl
+
+   Almacena las tablas y vistas finales que consumió Power BI.
+   Almacena un script para la limpieza de KPIs dependientes previos que pudieran ocasionar errores al ejecutar el pipeline.
+
+   - dml
+     
+   Almacena las consultas analíticas que no serán consmidas por elementos visuales de Power BI (KPIs)
+  
+   - quality
+     
+    Almacena los scripts de validación de datos para las tablas que alimentan a Power BI.
+     
+     
+6. Se generó el dashboard en Power BI usando como input las tablas _generales_ y _satisfaccion_ y las vistas finales craedas con la ejecución del SQL pipeline.
+
+### Recomendaciones
+* Se recomienda comenzar a atender las áreas de oportunidad relacionadas con las preguntas 22, 9 y 8. Lo anterior debido a que todas estas pregntas fueron identificadas tanto como preguntas con mayor diferencia tanto negativa como positva y como preguntas con la mayor diferencia negativa en el procedimiento más solicitado, así se pudo inferir que la mayoria de las insatisfacciones sólo se presentaron en casos muy puntuales de la población, por lo cual, al ser pocos casos serian más sencillos de atender, además de que solicionarlos no sólo incrementaría la percepción del servico sino que tambien reduciría de forma considerable la insatisfacción general con la atención médica al resolver 3 de 5 áreas de oportunidad que tuvieron la mayor diferencia negativa, rebalanceando la satisfacción general de los pacientes con el servicio médico.
+* A mediano plazo se recomienda trabajar en las áreas de mejora de las preguntas 2, 12 y 7 abarcando así la totalidad de las áreas de mejora prioritarias identificadas garantizando un incremento en la satisfacción versus insatisfacción general.
+* A consideración del personal médico, para facilitar el análisis posterior se recomienda recabar más datos del procediiento menos representados _Dictamen incapcidad Permanente Total_ o en su defecto consolidarlo en un sólo grupo que incluya también _Dictamen incapcidad Permanente Parcial_.
+
+### Visualizaciones interesantes
+
+
+
+## Comparación de metodologías diagnósticas para la enfermedad de hidrops
+
+
+# Proyectos de ciencia de datos
+
+## Retención de clientes
 
 Según un estudio de Harvard Business School, el coste de adquisición de un nuevo cliente es de 5 a 7 veces mayor que el coste de retener un cliente existente. Con la finalidad de __reducir costos__ desarrollé un modelo predictivo que permitió identificar a los clientes que cancelarian su servicio con Telecom, permitiendo desarrollar __estrategias promocionales focalizadas__ aumentando la __fidelización efectiva__.
 
@@ -126,7 +266,7 @@ Explora a detalle en el repositorio:
 
 
 
-## 2. Predicción de la demanda de una app de transporte 
+## Predicción de la demanda de una app de transporte 
 
 
 Previniendo fluctuaciones en la demanda de transporte en áreas adyacentes a aeropuertos, se logró asignar recursos operativos y captar suficientes conductores para cubrir eficientemente el volumen de solicitudes durante los períodos de mayor actividad.
