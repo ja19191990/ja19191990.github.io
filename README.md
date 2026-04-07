@@ -89,17 +89,13 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 
 * Etapas
 
-- Diseño
-- Desarrollo
-- Prueba
-- Análisis
+1. Diseño
+2. Desarrollo
+3. Prueba
+4. Análisis
 
-* Flujo de trabajo
-
-
-     
-     
-6. Se generó el dashboard en Power BI usando como input las tablas _generales_ y _satisfaccion_ y las vistas finales craedas con la ejecución del SQL pipeline.
+* Flujo de trabajo <br>
+![gif_workflow](assets/img/gif_workflow.gif)
 
 ### Recomendaciones
 * Se recomienda comenzar a atender las áreas de oportunidad relacionadas con las preguntas 22, 9 y 8. Lo anterior debido a que todas estas pregntas fueron identificadas tanto como preguntas con mayor diferencia tanto negativa como positva y como preguntas con la mayor diferencia negativa en el procedimiento más solicitado, así se pudo inferir que la mayoria de las insatisfacciones sólo se presentaron en casos muy puntuales de la población, por lo cual, al ser pocos casos serian más sencillos de atender, además de que solicionarlos no sólo incrementaría la percepción del servico sino que tambien reduciría de forma considerable la insatisfacción general con la atención médica al resolver 3 de 5 áreas de oportunidad que tuvieron la mayor diferencia negativa, rebalanceando la satisfacción general de los pacientes con el servicio médico.
