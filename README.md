@@ -96,56 +96,7 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 
 * Flujo de trabajo
 
-1. A partir de un archivo .csv de Excel ubicado en data/raw se realizó la exploración inicial de los datos.
-2. Se alimentó el notebook _EDA_ en el cual se realizó:
-    - Limpieza de datos.
-    - Estandarización de encabezados.
-    - Corrección de errores de importación.
-    - Visualización incial da los datos.
-  
 
-El output fue _preprocessing.csv_.
-
-
-3. El archivo _preprocessing.csv_ fue el input para el notebook _Preprocessing.ipynb_ enfocado en:
-    - Enriquecimiento y transformación de características.
-    - Cambio en tipo de variables recien añadidas.
-    - Visualización a detalle con datos transformados.
-
-    
-El output fue el dataset _df_sql.csv_.
-
-
-4. Al archivo anterior fue cargado en PostgreSQL iniciando el *pipeline* automatizado que creó tablas, validó calidad de datos y generó vistas analíticas mediante scripts ejecutados secuencialmente desde Python, garantizando reproducibilidad del modelo de datos. La secuencia del pipeline fue la siguiente:
-    - load_to_postgres.py
-
-   
-      Carga el dataset procesado (df_sql.csv) desde data/processed/ hacia PostgreSQL, creando o reemplazando la tabla base df_sql. El modelado de bases de datos         incluyo la creación de las tablas _generales_ y _satisfaccion_, la creación de claves primarias, creación de vistas finales y normalización de tablas.
-    - run_sql_pipeline.py
-  
-      
-      Se realizaron valiaciones de calidad de datos de las tablas de salida del pipeline de SQL que alimentaron a Power BI, comprobando la centa de filas,               columnas, el tipo de dato por columna y la existencia de filas duplicadas.
-      Se crearon scripts de SQL analíticos para la consulta KPIs como: ¿Cúal fue la pregunta con la mayor diferencia negativa? ¿Cúal fue la pregunta con la mayor        diferencia positiva? ¿Cuantos pacientes se tienen por procedimiento?
-   - export_to_csv.py
-  
-     
-     Extrae tablas y vistas finales desde PostgreSQL y las exporta a .csv para su consumo en Power BI y visualización reproducible.
-
-
-5. Se almacena el ouput del pipeline en la ubicación sql/:
-
-    - ddl
-
-   Almacena las tablas y vistas finales que consumió Power BI.
-   Almacena un script para la limpieza de KPIs dependientes previos que pudieran ocasionar errores al ejecutar el pipeline.
-
-   - dml
-     
-   Almacena las consultas analíticas que no serán consmidas por elementos visuales de Power BI (KPIs)
-  
-   - quality
-     
-    Almacena los scripts de validación de datos para las tablas que alimentan a Power BI.
      
      
 6. Se generó el dashboard en Power BI usando como input las tablas _generales_ y _satisfaccion_ y las vistas finales craedas con la ejecución del SQL pipeline.
