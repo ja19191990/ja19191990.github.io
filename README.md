@@ -105,7 +105,7 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 ### Visualizaciones interesantes
 ¿Cuantos pacientes se presentaron por procedimiento?<br>
 
-![schooling-per-procedure](assets/img/schooling_per_procedure.gif)
+![gif_schooling_per_procedure](assets/img/schooling_per_procedure.gif)
 	
 ¿Cuaantas son mujeres?<br>
 
