@@ -103,7 +103,27 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 * A consideración del personal médico, para facilitar el análisis posterior se recomienda recabar más datos del procediiento menos representados _Dictamen incapcidad Permanente Total_ o en su defecto consolidarlo en un sólo grupo que incluya también _Dictamen incapcidad Permanente Parcial_.
 
 ### Visualizaciones interesantes
+¿Cuantos pacientes se presentaron por procedimiento?<br>
 
+![schooling-per-procedure](assets/img/schooling_per_procedure.gif)
+	
+¿Cuaantas son mujeres?<br>
+
+![women-per-procedure](assets/img/women_per_procedure.gif)
+
+¿Cuantos son hombres?<br>
+	
+![men-per-procedure](assets/img/men_per_procedure.gif)
+
+¿Es mayor la expectativa o la percepción de satisfacción del servicio recibido?<br>
+¿Qué preguntas mostraron la mayor diferencia negativa entre percpeción y expectativa?<br>
+¿Qué preguntas mostraron la mayor diferencia positiva entre percepción y expectativa?<br>
+
+![metrics-by-procedure](assets/img/metrics_by_procedure.gif)
+
+¿Cómo cambia la expectativa y percepción de cada procedimiento recibido según el sexo del paciente?
+
+![metrics-by-sex](assets/img/metrics_by_sex.gif)
 
 
 ## Comparación de metodologías diagnósticas para la enfermedad de hidrops
