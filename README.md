@@ -9,6 +9,7 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 - Generación de modelos predictivos usando __Scikit-learn, PyTorch, TensorFlow__
 - Optimización de modelos de __Machine Learning__ con __CatBoost, Optuna, LigthGBM__ y __GridSearchCV__
 - Visualización de datos con herramientas como __Seaborn, Matplotlib, PowerBI, Chemdraw__ y __MestreNova__
+- Bases de datos: __Excel__, __SQL__, __PostgreSQL__, __SQL Server__, __MySQL__ y __PySpark__.
 
 
 ## Soft Skills
@@ -161,7 +162,24 @@ A partir de un archivo .csv se obtuvieron los datos originales los cuales fueron
 Los resultados sugieren que no existen diferencias estadísticamente significativas entre la electrococleografía y los criterios clínicos de Bárány en la clasificación diagnóstica del hidrops endolinfático, tanto en oído derecho como izquierdo, dentro del grupo de pacientes analizado. Esto significa equivalencia diagnóstica, decisión que apoyo en la compra de un equipo especializado en este tipo de análisis en el árae de audiología.
 
 ### Visualizaciones interesantes
+¿Cómo son los diagnósticos con los criterios de Bárany en cada uno de los oídos de los pacientes estudiados?
 
+![histograms-hidrops-per-ear](assets/img/histograms_hidrops_per_ear.png)
+
+¿Qué tan confiable es la electrococleografía al diagnosticar la enfermedad en comparación al método tradicional en cada uno de los oídos análizados?
+
+Para oídos derechos:
+
+![confusion-matrix-ear-right](assets/img/confusion_matrix_ear_right.png)
+
+
+Para oídos izquierdos:
+
+![confusion-matrix-ear-left](assets/img/confusion_matrix_ear_left.png)
+
+<br>
+<br>
+<br>
 
 # Proyectos de ciencia de datos
 
