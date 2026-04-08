@@ -199,13 +199,15 @@ Los histogrmas mostraron:
 Para responder la pregunta se cálculo la especificidad, la sensibilidad y se realizó la prueba de hipóteissi de Mc Nemar.
 Las siguientes son fórmulas relevantes para dichos cálculos:
 
+<br>
 $$ 
 Sensibilidad = VP / (VP + FN) 
 $$
-
+<br>
 $$
 Especificidad = VN / (VN + FP)
 $$
+<br>
 
 * Para oídos derechos:<br>
 
