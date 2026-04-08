@@ -105,28 +105,45 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 * A consideración del personal médico, para facilitar el análisis posterior se recomienda recabar más datos del procediiento menos representados _Dictamen incapcidad Permanente Total_ o en su defecto consolidarlo en un sólo grupo que incluya también _Dictamen incapcidad Permanente Parcial_.
 
 ### Visualizaciones interesantes
-¿Cuantos pacientes se presentaron por procedimiento?<br>
+1. ¿Cuantos pacientes se presentaron por procedimiento?<br>
+
+| Procedimiento | Número de pacientes |
+| --- | --- |
+| Calificación accidente de trabajo | 204 |
+| Dictamen Incapacidad Permanente Parcial | 51 |
+| Dictamen de Invalidez | 56 |
+| Calificación enfermedad de trabajo | 46|
+| Dictamen beneficiario incapacitado | 25 |
+| Dictamen Incapacidad Permanente Total | 1 |
+
+La visualización gráfica de la tabla anterior se puede apreciar en la visualización dinámica de Power BI con segmentadores por procedimiento. Noté como los valores del contador en verde señala exactamente la cuentra de la tabla anterior según el procedimiento analizado y como además se desglosa la cantidad de hombres y mujeres, su rango de edad y escolaridad al relacionar todas las variables en Power BI creando profundidad de análisis y sin sacrificar velocidad:
 
 ![schooling_per_procedure](assets/img/schooling_per_procedure.gif)
 	
-¿Cuaantas son mujeres?<br>
+2. ¿Cómo es la distribución de cada sexo en los pacientes encuestados?<br>
 
+De los 383 pacientes analizados 181 fueron hombres y 200 fueron mujeres. Al analizar la distribución de ambos sexos por procedimiento se observó que:
+
+* La distribución de pacientes por procedimiento es muy desigual, siendo el procedimiento Calificación accidente de trabajo el más solicitado con diferencia entre los encuestados abarcando más de la mitad de los casos totales de encuestados. Por otra parte el  Dictamen por incapacidad Permanente Total fue el menos solicitado con sólo un caso entre los encuestados.
+* La distribución entre hombres y mujeres por procedimiento fue muy variada encontrado que procedimientos como Calificacción accidente de trabajo y Dictamen de invalidez la proporción fue equilibrada con distribuciones para cada sexo en el rango entre 40% - 60%, para el resto de procedimientos las proporciones entre ambos sexos fue marcadamente desigual.
+
+Visualización del dashboard para mujeres según el procedimiento recibido:<br>
 ![women-per-procedure](assets/img/women_per_procedure.gif)
 
-¿Cuantos son hombres?<br>
+Visualización del dashboard para hombres según el procedimiento recibido:<br>
 	
 ![men-per-procedure](assets/img/men_per_procedure.gif)
 
-¿Es mayor la expectativa o la percepción de satisfacción del servicio recibido y que preguntas mostraron la mayor diferencia entre percepción y expectativa?<br>
+3. ¿Qué relación hay entre la expectativa o la percepción de satisfacción del servicio recibido y que preguntas mostraron la mayor diferencia entre percepción y expectativa?<br>
+* De forma general la expectativa negativa del servicio es en todos los procedimientos superior a la satisfacción recibida.
+* En orden descendente de valor de diferencia se obtuvieron las preguntas 9 > 15 > 7 > 22 > 8. Lo anterior indicó que los puntos evaluados por estas preguntas son las mayores fortalezas del servicio actual médico actual, debido a que si la diferencia es positiva es indicativo de que la percepción fue mayor a la expectativa, lo cual se puede traducir como satisfacción de los pacientes en la atención recibida. En general se puede observar que las diferencias positivas oscilaron entre 1.71 a 1.53 indicando una pequeña diferencia entre el valor de la percepción y expectativa, por lo que aunque con los resultados actuales la evaluación de dichas preguntas hayan sido favorables esta podría cambiar con facilidad en un futuro próximo si estas fortalezas se descuidan.
+* En orden ascendente de diferencia obtenida las preguntas fueron: 2 > 22 > 9 > 8 > 7. Las preguntas anteriores indican los puntos de mejora más urgentes a tratar para el servicio médico de medicina en el trabajo ya que un valor de diferencia negativa promedio indica una mayor valor de expectativa con respecto a la percepción del servicio médico recibido. Las diferencias se encontraron en el intervalo de -1.82 a -1.73 mostrando un intervalo con valores ligeramente mayores respecto al caso de las preguntas con diferencia positiva, lo cual señala una respuesta general de los pacientes que se inclina a la insatisfacción en el servicio recibido.
+* El procedimiento más solicitado fue la Calificación accidente de trabajo con el 53.26% de los casos. Al analizar las preguntas con mayor diferencia negativa de dichos pacientes se observó que las preguntas con mayor grado de insatisfacción en orden ascendente fueron: 9 < 22 < 8 < 2 < 12. Como era de esperarse al abarcar la mayoría de los casos la mayoría de las preguntas coincidieron con aquellas que se mostraron al analizar las preguntas que tuvieron la mayor diferencia negativa de forma global siendo coincidentes las preguntas: 22, 9, 8 corroborando el caraceter prioritario por atender dichos aspectos de mejora. Por otro lado las preguntas 12 y 2 podrían ser atractiva de tratar a mediano plazo porque su mejora afectaría positivamente en la percepción de más del 50% de los pacientes.
 
 ![metrics-by-procedure](assets/img/metrics_by_procedure.gif)
 
-¿Cómo cambia la expectativa y percepción de cada procedimiento recibido según el sexo del paciente?
-
-![metrics-by-sex](assets/img/metrics_by_sex.gif)
-
-¿Cómo es el paciente típico que acude a cada procedimiento?
-
+4. ¿Cómo es el paciente típico que acude a cada procedimiento?<br>
+La siguiente visualización en el dashboard dinámico de Power BI muestra como los datos demográficos (tales como la edad promedio y sexo más frecuente) y los valores de expectativa promedio y percepción promedio del servicio médico cambia según el procedimiento analizado, debido a que existieron cambios en las poblaciones de cada procedimiento.
 ![typical-patient-by-procedure](assets/img/typical_patient_by_procedure.gif)
 <br>
 <br>
@@ -162,18 +179,55 @@ A partir de un archivo .csv se obtuvieron los datos originales los cuales fueron
 Los resultados sugieren que no existen diferencias estadísticamente significativas entre la electrococleografía y los criterios clínicos de Bárány en la clasificación diagnóstica del hidrops endolinfático, tanto en oído derecho como izquierdo, dentro del grupo de pacientes analizado. Esto significa equivalencia diagnóstica, decisión que apoyo en la compra de un equipo especializado en este tipo de análisis en el árae de audiología.
 
 ### Visualizaciones interesantes
-¿Cómo son los diagnósticos con los criterios de Bárany en cada uno de los oídos de los pacientes estudiados?
+1. ¿Cómo son los diagnósticos con los criterios de Bárany en cada uno de los oídos de los pacientes estudiados?
 
 ![histograms-hidrops-per-ear](assets/img/histograms_hidrops_per_ear.png)
 
-¿Qué tan confiable es la electrococleografía al diagnosticar la enfermedad en comparación al método tradicional en cada uno de los oídos análizados?
+Los histogrmas mostraron:
+* Para ambos oídos los resultados de diagnóticos más frecuentes mediante los criterios de Bárány fueron los definidos.
+* Para ambos ídos los resultados de diagnóstico menos frecuentes mediante los criterios de Bárány fueron los probables.
+* La segunda respuesta más frecuente en ambos oídos fue para los casos negativos de diagnóstico mediante los criterios de Bárány.
+* Cuando se analizan los perfiles auditivos y los resultados definidos del diagnótico mediante los criterios de Bárány se observa que para los oídos derechos la proporción de los diagnósticos bilaterales es ligeramente inferior a la cantidad de los identificadas sólo en el oído derecho pero dicho patrón se invierte al analizar los resultados de los oídos izquierdos ya que en la cantidad de los diagnósticos definidos que fueron también bilaterales fueron mayores que los definidos unicamente sobre el oído izquierdo. Cabe resaltar que aunque se observá un patrón opuesta la diferencia en las proporciones de las frecuencias son pequeñas y aproximadamente llegan a la mitad de los casos para ambos oídos.
+* Los perfiles bilaterales que también fueron diagnósticados como probables mediante los criterios de Bárány fueron marcademente menores que los identificados como probables en un sólo oído. Dicha proporción se encontro entre 1:3
 
-Para oídos derechos:
+2. ¿Qué tan confiable es la electrococleografía al diagnosticar la enfermedad en comparación al método tradicional en cada uno de los oídos análizados?
+
+Para responder la pregunta se cálculo la especificidad, la sensibilidad y se realizó la prueba de hipóteissi de Mc Nemar.
+Las siguientes son fórmulas relevantes para dichos cálculos:
+
+$$ 
+Sensibilidad = VP / (VP + FN) 
+$$
+
+$$
+Especificidad = VN / (VN + FP)
+$$
+
+* Para oídos derechos:<br>
+
+Sensibilidad (Recall): 0.88 <br>
+Especificidad: 0.71 <br>
+``` python
+result_od = mcnemar(matrix_od, exact=True)
+print('p valor:', result_od.pvalue)
+p valor: 1.0
+```
+Se obtuvo un valor p = 1.0, lo que indica que no existe evidencia estadísticamente significativa para rechazar la hipótesis nula. Esto sugiere que, en este grupo, ambos métodos clasifican de forma similar a los pacientes respecto al diagnóstico del hidrops endolinfático en el oído derecho.
 
 ![confusion-matrix-ear-right](assets/img/confusion_matrix_ear_right.png)
 
 
-Para oídos izquierdos:
+* Para oídos izquierdos:<br>
+
+Sensibilidad (Recall): 0.95<br>
+Especificidad: 0.69<br>
+
+``` python
+result_oi = mcnemar(matrix_oi, exact=True)
+print('p valor:', result_oi.pvalue)
+p valor: 0.375
+```
+El valor p = 0.375 también está por encima del umbral común de significancia (α = 0.05), por lo que tampoco se rechaza la hipótesis nula. En este caso, no se encontró una diferencia significativa entre los métodos en la clasificación diagnóstica del oído izquierdo.
 
 ![confusion-matrix-ear-left](assets/img/confusion_matrix_ear_left.png)
 
