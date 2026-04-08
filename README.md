@@ -125,6 +125,9 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 
 ![metrics-by-sex](assets/img/metrics_by_sex.gif)
 
+¿Cómo es el paciente típico que acude a cada procedimiento?
+
+|[]()
 
 ## Comparación de metodologías diagnósticas para la enfermedad de hidrops
 
