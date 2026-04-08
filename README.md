@@ -43,6 +43,7 @@ El servicio de medicina del trabajo del Hospital General de Zona de Medicina Fam
 Se tuvo interes en comparar las expectativas y percepciones de la atención médica.
 
 ### Herramientas y habilidades utilizadas
+Excel, Python, SQL, PostgreSQL, Power BI, Pandas, Jupyter Notebook.
 
 ### Requerimientos para el éxito
 1. Diseñar y crear un dashboard interactivo que muestre:
@@ -115,9 +116,7 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 	
 ![men-per-procedure](assets/img/men_per_procedure.gif)
 
-¿Es mayor la expectativa o la percepción de satisfacción del servicio recibido?<br>
-¿Qué preguntas mostraron la mayor diferencia negativa entre percpeción y expectativa?<br>
-¿Qué preguntas mostraron la mayor diferencia positiva entre percepción y expectativa?<br>
+¿Es mayor la expectativa o la percepción de satisfacción del servicio recibido y que preguntas mostraron la mayor diferencia entre percepción y expectativa?<br>
 
 ![metrics-by-procedure](assets/img/metrics_by_procedure.gif)
 
@@ -128,8 +127,40 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 ¿Cómo es el paciente típico que acude a cada procedimiento?
 
 ![typical-patient-by-procedure](assets/img/typical_patient_by_procedure.gif)
+<br>
+<br>
+<br>
 
 ## Comparación de metodologías diagnósticas para la enfermedad de hidrops
+
+Proyecto enfocado a conocer si existen diferencias estadísticamete significativas entre el uso de criterios médicos de Bárány y la electrococleografía estratimpánica para diagnosticar hidrops endolinfático en un grupo de 38 pacientes de la UMAE HE 1, considerando ambos oidos en cada paciente.
+
+### Planteamiento de Hipótesis
+- Hipótesis nula:
+No hay diferencia estadísticamente significativa entre los resultados de clasificación diagnóstica de la electrococleografía extratimpánica y los criterios clínicos de la Sociedad Bárány en pacientes adultos atendidos en el servicio de audiología de la UMAE HE 1.
+
+- Hipótesis alternativa:
+Hay una diferencia estadísticamente significativa entre los resultados de clasificación diagnóstica de la electrococleografía extratimpánica y los criterios clínicos de la Sociedad Bárány en pacientes adultos atendidos en el servicio de audiología de la UMAE HE 1.
+
+### Herramientas y habilidades utilizadas
+Excel, Python, Pandas, Numpy, Statsmodels, Jupyter Notebook, Seaborn, Matplotlib, estadística inferencial.
+
+### Requerimientos para el éxito
+1. Demostrar estadísticamente si los métodos de diagnóstico mediante los critierios de Bárany y la electrococleografía son equivalentes o no.
+2. Calcular la especificidad y sensibilidad del diagnóstico utilizando la electrococleografía.
+
+### Preguntas clave
+¿Son equivalentes los diagnósticos obtenidos mediante los criterios de Bárany por entrevista médica y la electrococleografía para diagnosticar hidrops endolinfático sin importar la severidad de la enfermedad?
+¿Qué proporción de los diagnósticos son definidos y cuales probables?
+¿Cuál es la sensibilidad (recall) y especificidad de la electrococleografía en comparación con los criterios de Bárany?
+
+### Metodología
+A partir de un archivo .csv se obtuvieron los datos originales los cuales fueron limpiados y estructurados para el análisis utilizando Python y librerias especializadas como Pandas. Posteriormente se trabajo en encontrar relaciones entre variables y se presentaron visualizaciones iniciales de los datos usando Matplotlib y Seaborn. Mediante ingeniería de características se enriquecieron los datos iniciales y se agregaron características de cara a realizar la prueba de hipótesisi de Mc Nemar para cada oído en cada caso clínico. Los resultados de la prueba estadística junto con los resultados de la sensibilidad y especificidad fueron interpretados para realizar una conclusión final de si existe o no equivalencia estadística entre métodos diagnósticos.
+
+### Recomendaciones
+Los resultados sugieren que no existen diferencias estadísticamente significativas entre la electrococleografía y los criterios clínicos de Bárány en la clasificación diagnóstica del hidrops endolinfático, tanto en oído derecho como izquierdo, dentro del grupo de pacientes analizado. Esto significa equivalencia diagnóstica, decisión que apoyo en la compra de un equipo especializado en este tipo de análisis en el árae de audiología.
+
+### Visualizaciones interesantes
 
 
 # Proyectos de ciencia de datos
@@ -151,7 +182,6 @@ Según un estudio de Harvard Business School, el coste de adquisición de un nue
 ![Aprendizaje Supervisado](https://img.shields.io/badge/Aprendizaje%20Supervisado-blue)
 
 ### Requerimiento para el éxito:
-
 
 El modelo debe de ser capaz de predecir con un AUC-ROC superior a 0.65.
 
