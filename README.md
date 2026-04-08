@@ -127,7 +127,7 @@ Por razones de confidencialidad de los pacientes las preguntas no se muestran y 
 
 ¿Cómo es el paciente típico que acude a cada procedimiento?
 
-|[]()
+![typical-patient-by-procedure](assets/img/typical_patient_by_procedure.gif)
 
 ## Comparación de metodologías diagnósticas para la enfermedad de hidrops
 
