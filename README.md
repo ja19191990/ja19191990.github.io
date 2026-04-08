@@ -196,18 +196,7 @@ Los histogrmas mostraron:
 
 2. ¿Qué tan confiable es la electrococleografía al diagnosticar la enfermedad en comparación al método tradicional en cada uno de los oídos análizados?
 
-Para responder la pregunta se cálculo la especificidad, la sensibilidad y se realizó la prueba de hipóteissi de Mc Nemar.
-Las siguientes son fórmulas relevantes para dichos cálculos:
-
-<br>
-$$ 
-Sensibilidad = VP / (VP + FN) 
-$$
-<br>
-$$
-Especificidad = VN / (VN + FP)
-$$
-<br>
+Para responder la pregunta se cálculo la especificidad, la sensibilidad y se realizó la prueba de hipóteissi de Mc Nemar para cada caso clínico, por lo que al analizar los oídos de forma independiente se obtuvieron los siguientes resultados:
 
 * Para oídos derechos:<br>
 
