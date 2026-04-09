@@ -22,8 +22,8 @@ Doy certeza en la toma de decisiones estratégicas y ahorro tiempo mediante la a
 
 # Índice
 - [Proyectos de análisis de datos](#Proyectos-de-análisis-de-datos)
-    - [Análisis de la calidad del servicio médico](#Análisis-de-la-calidad-del-servicio-médico)
-    - [Comparación de metodologías diagnósticas para la enfermedad de hidrops](#Comparación-de-metodologías-diagnósticas-para-la-enfermedad-de-hidrops) 
+	- [Análisis de la calidad del servicio médico](#Análisis-de-la-calidad-del-servicio-médico)
+    - [Comparación de metodologías diagnósticas para la enfermedad de hidrops](#Comparación-de-metodologías-diagnósticas-para-la-enfermedad-de-hidrops)
 - [Proyectos de ciencia de datos](#Proyectos-de-ciencia-de-datos)
     - [Retención de clientes](#Retención-de-clientes)
     - [Predicción de la demanda de una app de transporte](#Predicción-de-la-demanda-de-una-app-de-transporte)
